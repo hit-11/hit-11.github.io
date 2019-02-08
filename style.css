@@ -1,0 +1,38 @@
+body {
+    background-color: #F9F8FA;
+}
+
+.about {
+    font-family: 'PT Serif Caption', serif;
+    color: #323232;
+    font-size: 38px;
+    font-weight: 600;
+    margin-top: 5%;
+    letter-spacing: 2px;
+    line-height: 100px;
+}
+
+.hello {
+    background-image: url("./public/hi.svg");
+    color: white;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 2%;
+    font-size: 38px;
+    margin-left: 12%;
+}
+
+.text {
+    margin-left: 20%;
+}
+
+.words span {
+    position: absolute;
+    opacity: 0;
+    -webkit-transform: translateZ(0);
+    transition: opacity 0.5s;
+}
+
+.words span.active {
+    opacity: 1;
+}
