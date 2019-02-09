@@ -1,3 +1,12 @@
+var ham = document.getElementById("hamburger");
+ham.addEventListener('click', function() {
+    if (ham.classList != "open") {
+        ham.classList.add('open');
+    } else {
+        ham.classList.remove('open');
+    }
+});
+
 var changeWords = function() {
     var i = 0;
     var listOfWords = document.querySelectorAll('.words>span');
