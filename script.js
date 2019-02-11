@@ -2,8 +2,12 @@ var ham = document.getElementById("hamburger");
 ham.addEventListener('click', function() {
     if (ham.classList != "open") {
         ham.classList.add('open');
+        document.getElementById("navigation").style.opacity = "1";
+        document.getElementById("navigation").style.width = "100%";
     } else {
         ham.classList.remove('open');
+        document.getElementById("navigation").style.width = "0%";
+        document.getElementById("navigation").style.opacity = "0";
     }
 });
 
