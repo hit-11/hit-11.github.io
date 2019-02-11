@@ -22,3 +22,24 @@ var changeWords = function() {
     }, 2000)
 }
 changeWords();
+
+var navLinks = document.querySelectorAll('.overlay a');
+
+for (var i in navLinks) {
+    slideIn(i);
+    slideOut(i);
+}
+
+function slideIn(i) {
+    navLinks[i].addEventListener('mouseover', () => {
+        navLinks[i].classList.remove('out-active');
+        navLinks[i].classList.add('in-active');
+    });
+}
+
+function slideOut(i) {
+    navLinks[i].addEventListener('mouseout', () => {
+        navLinks[i].classList.remove('in-active');
+        navLinks[i].classList.add('out-active');
+    });
+}
