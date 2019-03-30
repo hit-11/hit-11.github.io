@@ -9,6 +9,7 @@
     <link href="style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Serif+Caption" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </head>
 
 <body>
@@ -52,22 +53,18 @@
             </div>
         </div>
         <div class="overlay-content">
-            <a href="#">Home</a>
-            <a href="#">Projects</a>
-            <a href="#">Skillset</a>
+            <a href="#home">Home</a>
+            <a href="#skill">Skillset</a>
+            <a href="#project">Projects</a>
             <a href="#">Get in Touch</a>
         </div>
     </div>
-
-    <div class="about">
+    <div class="about" id="home">
         <h1>
-            <strong>
-                    <span class="hello">Hi,</span>
-                    <br>
-            </strong>
-            <div class="text">I’m Hitesh,<br /> a developer &amp; dreamer<br /> who&nbsp;loves&nbsp;
+            <strong><span class="hello">Hi,</span></strong>
+            <div class="text">I'm Hitesh,<br /> a developer &amp; dreamer<br /> who&nbsp;loves&nbsp;
                 <span class="words">
-                <span class="active">thinking</span>
+                    <span class="active">thinking</span>
                 <span>space</span>
                 <span>music</span>
                 <span>thinking</span>
@@ -78,8 +75,60 @@
             </div>
         </h1>
     </div>
+    <div class="container">
+        <div class="row">
+            <div class="skills col s12" id="skill">
+                <hr class="separator">
+                <div class="row">
+                    <div class="col s12">
+                        <h1>I'm specialized in</h1>
+                    </div>
+                    <div class="col s2"></div>
+                    <div class="col s3">
+                        <h3><a>Client Side</a></h3>
+                        <ul>
+                            <li><a class="expert">HTML5</a></li>
+                            <li><a class="expert">CSS3</a></li>
+                            <li><a class="expert">Javascript ES5,ES6</a></li>
+                            <li><a class="intermediate">Bootstrap 3,4</a></li>
+                            <li><a class="intermediate">Materialize</a></li>
+                            <li><a class="intermediate">JQuery</a></li>
+                        </ul>
+                    </div>
+                    <div class="col s3">
+                        <h3><a>Server Side</a></h3>
+                        <ul>
+                            <li><a class="expert">Node.js</a></li>
+                            <li><a class="expert">Express.js</a></li>
+                            <li><a class="intermediate">Ajax</a></li>
+                            <li><a class="intermediate">Mongodb</a></li>
+                            <li><a class="beginner">MySql</a></li>
+                        </ul>
+                    </div>
+                    <div class="col s3">
+                        <h3><a>Others</a></h3>
+                        <ul>
+                            <li><a class="intermediate">Version Control - Git</a></li>
+                            <li><a class="intermediate">C</a></li>
+                            <li><a class="intermediate">C++</a></li>
+                            <li><a class="beginner">Java</a></li>
+                            <li><a class="beginner">Linux</a></li>
+                        </ul>
+                    </div>
+                    <div class="col s4 offset-s8">
+                        <div class="box1"></div><span>Basic</span>
+                        <div class="box2"></div><span>Intermediate</span>
+                        <div class="box3"></div><span>Experienced</span>
+                    </div>
+                </div>
+            </div>
 
-    <script src="script.js"></script>
+        </div>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="script.js"></script>
+
 </body>
 
 </html>

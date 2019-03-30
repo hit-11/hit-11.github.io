@@ -1,15 +1,26 @@
+function openNav() {
+    ham.classList.add('open');
+    document.getElementById("navigation").style.opacity = "1";
+    document.getElementById("navigation").style.width = "100%";
+}
+
+function closeNav() {
+    ham.classList.remove('open');
+    document.getElementById("navigation").style.width = "0%";
+    document.getElementById("navigation").style.opacity = "0";
+}
+
 var ham = document.getElementById("hamburger");
 ham.addEventListener('click', function() {
     if (ham.classList != "open") {
-        ham.classList.add('open');
-        document.getElementById("navigation").style.opacity = "1";
-        document.getElementById("navigation").style.width = "100%";
+        openNav();
     } else {
-        ham.classList.remove('open');
-        document.getElementById("navigation").style.width = "0%";
-        document.getElementById("navigation").style.opacity = "0";
+        closeNav();
     }
 });
+
+var overlayLinks = document.querySelector('.overlay-content');
+overlayLinks.addEventListener('click', closeNav);
 
 var changeWords = function() {
     var i = 0;
@@ -24,22 +35,29 @@ var changeWords = function() {
 changeWords();
 
 var navLinks = document.querySelectorAll('.overlay a');
-
-for (var i in navLinks) {
-    slideIn(i);
-    slideOut(i);
+var nl = Array.prototype.slice.call(navLinks);
+for (var i in nl) {
+    slideIn(nl, i);
+    slideOut(nl, i);
 }
 
-function slideIn(i) {
-    navLinks[i].addEventListener('mouseover', () => {
-        navLinks[i].classList.remove('out-active');
-        navLinks[i].classList.add('in-active');
+var skillLinks = document.querySelectorAll('#skill a');
+var sl = Array.prototype.slice.call(skillLinks);
+for (var i in sl) {
+    slideIn(sl, i);
+    slideOut(sl, i);
+}
+
+function slideIn(arr, i) {
+    arr[i].addEventListener('mouseover', () => {
+        arr[i].classList.remove('out-active');
+        arr[i].classList.add('in-active');
     });
 }
 
-function slideOut(i) {
-    navLinks[i].addEventListener('mouseout', () => {
-        navLinks[i].classList.remove('in-active');
-        navLinks[i].classList.add('out-active');
+function slideOut(arr, i) {
+    arr[i].addEventListener('mouseout', () => {
+        arr[i].classList.remove('in-active');
+        arr[i].classList.add('out-active');
     });
 }

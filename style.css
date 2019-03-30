@@ -1,13 +1,25 @@
+html,
 body {
     background-color: #F9F8FA;
+    margin: 0;
+    padding: 0;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    /* remove scrollbar space */
+    background: transparent;
+    /* optional: just make scrollbar invisible */
 }
 
 #hamburger {
-    position: absolute;
-    height: 30px;
-    width: 30px;
-    top: 40px;
-    right: 100px;
+    position: fixed;
+    height: 2.3%;
+    width: 2.3%;
+    top: 5%;
+    right: 4%;
     cursor: pointer;
     z-index: 11;
 }
@@ -125,41 +137,6 @@ body {
 .overlay a:focus {
     color: #f1f1f1;
     background-size: 100%;
-}
-
-.about {
-    font-family: 'PT Serif Caption', serif;
-    color: #323232;
-    font-size: 38px;
-    font-weight: 600;
-    margin-top: 5%;
-    letter-spacing: 2px;
-    line-height: 100px;
-}
-
-.hello {
-    background-image: url("./public/hi.svg");
-    color: white;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    padding: 2%;
-    font-size: 38px;
-    margin-left: 12%;
-}
-
-.text {
-    margin-left: 20%;
-}
-
-.words span {
-    position: absolute;
-    opacity: 0;
-    -webkit-transform: translateZ(0);
-    transition: opacity 0.5s;
-}
-
-.words span.active {
-    opacity: 1;
 }
 
 
@@ -298,4 +275,184 @@ body {
     animation-delay: 3s, 1.5s
 }
 
-f
+
+/* General Styling */
+
+.about,
+.skills {
+    font-family: 'PT Serif Caption', serif;
+    color: #323232;
+    height: 100vh;
+}
+
+.hello {
+    background-image: url("./public/hi.svg");
+    color: white;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 2%;
+    font-size: 48px;
+    margin-left: 12%;
+}
+
+.about h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 6%;
+    font-size: 82px;
+    font-weight: 600;
+    line-height: 120px;
+}
+
+.text {
+    margin-left: 20%;
+    margin-top: -4%;
+}
+
+.words span {
+    position: absolute;
+    opacity: 0;
+    -webkit-transform: translateZ(0);
+    transition: opacity 0.5s;
+}
+
+.words span.active {
+    opacity: 1;
+}
+
+.container,
+.row {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.skills {
+    width: 100vw !important;
+}
+
+#skill .separator {
+    width: 5%;
+    margin-top: 3%;
+    height: 3px;
+    background-color: #0a8df6;
+}
+
+#skill h1 {
+    font-size: 68px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+
+#skill ul {
+    color: #6d6d6d;
+    font-size: 25px;
+    padding-left: 2%;
+}
+
+#skill ul li {
+    margin-bottom: 3%;
+}
+
+
+/* .skills .card {
+    margin-left: 5%;
+    height: 400px;
+    background-color: #506FD4;
+    width: 35%;
+} */
+
+#skill a {
+    color: #323232;
+    padding: 4px;
+    display: inline-block;
+    transition: 0.4s;
+    padding-left: 2%;
+    padding-right: 2%;
+    cursor: pointer;
+    /*    background: linear-gradient( to left, #506FD4 0%, #4d6fdd 100%); */
+    background: linear-gradient( to left, #323232 0%, #323232 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-y;
+    background-size: 0;
+    transition: background-size 0.4s ease;
+}
+
+#skill a.in-active {
+    background-position: 0 100%;
+}
+
+#skill a.out-active {
+    background-position: 100% 0;
+}
+
+#skill a:hover,
+#skill a:focus {
+    color: #2196F3;
+    background-size: 100%;
+}
+
+#skill ul li a {
+    color: #6d6d6d;
+    padding-left: 2%;
+    padding-right: 2%;
+    background: linear-gradient( to left, #8BC34A 0%, #8BC34A 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-y;
+    background-size: 0;
+}
+
+#skill .beginner {
+    background: linear-gradient( to left, #d048e8 0%, #d048e8 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-y;
+    background-size: 0;
+}
+
+#skill .intermediate {
+    background: linear-gradient( to left, #f4dd15 0%, #f4dd15 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-y;
+    background-size: 0;
+}
+
+#skill .expert {
+    background: linear-gradient( to left, #91da3b 0%, #91da3b 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-y;
+    background-size: 0;
+}
+
+#skill ul li a:hover,
+#skill ul li a:focus {
+    color: black;
+    background-size: 100%;
+}
+
+#skill .box1,
+.box2,
+.box3 {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+#skill span {
+    font-size: 20px;
+}
+
+.box1 {
+    background: #d048e8;
+}
+
+.box2 {
+    background: #f4dd15;
+}
+
+.box3 {
+    background: #91da3b;
+}
