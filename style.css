@@ -82,6 +82,10 @@ body {
     right: 50%;
 }
 
+.activeLink {
+    opacity: 0.6;
+}
+
 .overlay {
     height: 100%;
     width: 0;
@@ -334,7 +338,7 @@ body {
     width: 5%;
     margin-top: 3%;
     height: 3px;
-    background-color: #0a8df6;
+    background-color: #506fd4;
 }
 
 #skill h1 {
@@ -454,5 +458,9 @@ body {
 }
 
 .box3 {
+    background: #91da3b;
+}
+
+box3 {
     background: #91da3b;
 }
