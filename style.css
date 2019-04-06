@@ -283,7 +283,9 @@ body {
 /* General Styling */
 
 .about,
-.skills {
+.skills,
+.projects,
+.contacts {
     font-family: 'PT Serif Caption', serif;
     color: #323232;
     height: 100vh;
@@ -330,18 +332,21 @@ body {
     padding: 0 !important;
 }
 
-.skills {
+.skills,
+.projects,
+.contacts {
     width: 100vw !important;
 }
 
-#skill .separator {
+.separator {
     width: 5%;
-    margin-top: 3%;
     height: 3px;
     background-color: #506fd4;
 }
 
-#skill h1 {
+#skill h1,
+#project h1,
+#contact h1 {
     font-size: 68px;
     font-weight: 600;
     text-align: center;
@@ -464,3 +469,56 @@ body {
 box3 {
     background: #91da3b;
 }
+
+.card {
+    background: #506FD4 !important;
+    color: white !important;
+    letter-spacing: 1.2px !important;
+    height: 35vh;
+    transition: 0.4s ease;
+    margin-top: 10%;
+}
+
+.card-content,
+.card-action {
+    font-size: 17px;
+}
+
+.card-action {
+    padding-top: 0 !important;
+}
+
+.card-title {
+    border-bottom: 1.5px solid;
+    display: inline-block !important;
+    margin-bottom: 5% !important;
+    font-weight: bold;
+}
+
+.card:hover {
+    -webkit-box-shadow: 6px 9px 15px -4px rgba(0, 0, 0, 0.81);
+    -moz-box-shadow: 6px 9px 15px -4px rgba(0, 0, 0, 0.81);
+    box-shadow: 6px 9px 15px -4px rgba(0, 0, 0, 0.81);
+}
+
+.card a,
+.card a:link,
+.card a:visited,
+.card a:hover,
+.card a:focus {
+    color: white !important;
+}
+
+.more {
+    margin-top: 5%;
+}
+
+.more a,
+.more a:hover,
+.more a:focus,
+.more a:visited {
+    color: #1d4ce7;
+    text-transform: uppercase;
+}
+
+#contact {}

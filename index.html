@@ -6,11 +6,16 @@
     <meta charset="UTF-8">
     <title>Portfolio</title>
     <link rel="icon" type="image/ico" href="favicon.png">
-    <link href="style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Serif+Caption" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+
 </head>
 
 <body>
@@ -57,10 +62,10 @@
             <a href="#home">Home</a>
             <a href="#skill">Skillset</a>
             <a href="#project">Projects</a>
-            <a href="#">Get in Touch</a>
+            <a href="#contact">Get in Touch</a>
         </div>
     </div>
-    <div class="about" id="home">
+    <div class="about" id="home" data-aos="zoom-in">
         <h1>
             <strong><span class="hello">Hi,</span></strong>
             <div class="text">I'm Hitesh,<br /> a developer &amp; dreamer<br /> who&nbsp;loves&nbsp;
@@ -78,14 +83,14 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="skills col s12" id="skill">
+            <div class="skills col s12" id="skill" data-aos="zoom-in">
                 <hr class="separator">
                 <div class="row">
                     <div class="col s12">
                         <h1>I'm specialized in</h1>
                     </div>
                     <div class="col s2"></div>
-                    <div class="col s3">
+                    <div class="col s3" data-aos="fade-right">
                         <h3><a>Client Side</a></h3>
                         <ul>
                             <li><a class="expert">HTML5</a></li>
@@ -96,17 +101,18 @@
                             <li><a class="intermediate">JQuery</a></li>
                         </ul>
                     </div>
-                    <div class="col s3">
+                    <div class="col s3" data-aos="fade-up">
                         <h3><a>Server Side</a></h3>
                         <ul>
                             <li><a class="expert">Node.js</a></li>
                             <li><a class="expert">Express.js</a></li>
+                            <li><a class="expert">EJS, Handlebars</a></li>
                             <li><a class="intermediate">Ajax</a></li>
                             <li><a class="intermediate">Mongodb</a></li>
                             <li><a class="beginner">MySql</a></li>
                         </ul>
                     </div>
-                    <div class="col s3">
+                    <div class="col s3" data-aos="fade-left">
                         <h3><a>Others</a></h3>
                         <ul>
                             <li><a class="intermediate">Version Control - Git</a></li>
@@ -123,11 +129,77 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="row">
+            <div class="projects col s12" id="project" data-aos="zoom-in">
+                <hr class="separator">
+                <div class="row">
+                    <div class="col s12">
+                        <h1>Work & Experience</h1>
+                    </div>
 
+                    <div class="col s12 m3" data-aos="flip-right">
+                        <div class="card ">
+                            <div class="card-content">
+                                <span class="card-title"><a href="#" target="_blank"><i class="fa fa-paperclip"></i> Chat App </a></span>
+                                <p>One to one chat app.<br/><br/>{ HTML, CSS, JAVASCRIPT, Express.js, Socket.io }</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m3" data-aos="flip-right">
+                        <div class="card ">
+                            <div class="card-content">
+                                <span class="card-title"><a href="#" target="_blank"><i class="fa fa-paperclip"></i> E-Learning </a></span>
+                                <p>A budget planner web app to managae income and expenses.<br/><br/>{ HTML, CSS, JAVASCRIPT, Materialize, Node.js, MongoDB}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m3" data-aos="flip-right">
+                        <div class="card ">
+                            <div class="card-content">
+                                <span class="card-title"><a href="https://hit-11.github.io/Budget-App/" target="_blank"><i class="fa fa-paperclip"></i> BUDGETY </a></span>
+                                <p>A budget planner web app to managae income and expenses.<br/><br/>{ HTML, CSS, JAVASCRIPT }</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m3" data-aos="flip-right">
+                        <div class="card ">
+                            <div class="card-content">
+                                <span class="card-title"><a href="https://hit-11.github.io/calculator/" target="_blank"><i class="fa fa-paperclip"></i> Calculator </a></span>
+                                <p>A basic calculator using Javascript<br/><br/>{ HTML, CSS, JAVASCRIPT }</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12"></div>
+                </div>
+                <div class="col m3 offset-m9 more">
+                    <h5>... Know More
+                        <a href="./public/hi.svg" target="_blank" download>About Me</a></h5>
+                </div>
+            </div>
         </div>
 
+        <div class="row">
+            <div class="contacts col s12" id="contact">
+                <hr class="separator">
+                <div class="row">
+                    <div class="col s12">
+                        <h1>Get In Touch</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 1000,
+            });
+        </script>
         <script src="script.js"></script>
 
 </body>

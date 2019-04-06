@@ -65,3 +65,52 @@ function slideOut(arr, i) {
         arr[i].classList.add('out-active');
     });
 }
+
+
+// var scrollTop = true;
+// var previousScrollTop;
+// $('document').ready(function() {
+//     previousScrollTop = screen.height;
+//     $(window).scroll(function() {
+//         if ($(window).scrollTop() < previousScrollTop) {
+//             if (scrollTop) {
+//                 console.log(scrollTop);
+//                 $(window).scroll(function() {
+//                     $('html,body').animate({ scrollTop: $('#skill').offset().top }, 1000);
+//                 });
+//             }
+//         } else if ($(window).scrollTop() < 2 * previousScrollTop) {
+//             if (scrollTop) {
+//                 $(window).scroll(function() {
+//                     $('html,body').animate({ scrollTop: $('#project').offset().top }, 1000);
+//                 });
+//             }
+//         } else {
+//             if (scrollTop) {
+//                 $(window).scroll(function() {
+//                     $('html,body').animate({ scrollTop: $('#contact').offset().top }, 1000);
+//                 });
+//             }
+//         }
+//         previousScrollTop = $(window).scrollTop();
+//     });
+// });
+// var scrollTop = true;
+// var prev = -1;
+// var pages = ['#home', '#skill', '#project', '#contact'];
+// $(window).scroll(function() {
+//     var pageNo = parseInt($(window).scrollTop() / $(window).height()) + 1;
+//     if (pageNo != prev) {
+//         scrollTop = true;
+//     }
+//     if (scrollTop) {
+//         $('html,body').animate({ scrollTop: $(pages[pageNo]).offset().top }, 1000);
+//     }
+//     prev = pageNo;
+// });
+
+$(document).ready(function() {
+    $('h1').click(function() {
+        $('html,body').animate({ scrollTop: $('#contact').offset().top }, 1000)
+    })
+});
