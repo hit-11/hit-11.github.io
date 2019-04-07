@@ -521,4 +521,47 @@ box3 {
     text-transform: uppercase;
 }
 
-#contact {}
+#contact {
+    position: relative;
+    padding: 0;
+}
+
+.profilePic {
+    border-radius: 50%;
+    width: 100%;
+    margin-bottom: 10%;
+}
+
+#contact .icons>a {
+    padding-left: 3vh;
+    color: black;
+    outline: none;
+}
+
+#contact .icons a:visited {
+    color: black;
+}
+
+#contact .icons>a:hover {
+    color: #1e4ce0 !important;
+}
+
+#contact .icons>a:link {
+    color: black;
+}
+
+#contact .icons i {
+    padding-top: 0;
+    font-size: 50px;
+    transition: transform .3s;
+    transition: color 0.2s linear;
+}
+
+#contact .icons a:hover i {
+    transform: scale(1.5);
+}
+
+#contact svg {
+    position: absolute;
+    bottom: 0;
+}
