@@ -530,6 +530,15 @@ box3 {
     border-radius: 50%;
     width: 100%;
     margin-bottom: 10%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.profilePic:hover {
+    -webkit-filter: grayscale(50%);
+    filter: grayscale(0);
 }
 
 #contact .icons>a {
@@ -543,7 +552,7 @@ box3 {
 }
 
 #contact .icons>a:hover {
-    color: #1e4ce0 !important;
+    color: #093bdd !important;
 }
 
 #contact .icons>a:link {
