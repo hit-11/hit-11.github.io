@@ -81,3 +81,4 @@ function scrollFunction() {
         document.getElementById("scrolltotop").style.display = "none";
     }
 }
+$(document).on("contextmenu", function(event) { event.preventDefault(); });
