@@ -66,8 +66,18 @@ function slideOut(arr, i) {
     });
 }
 
-$(document).ready(function() {
-    $('h1').click(function() {
-        $('html,body').animate({ scrollTop: $('#contact').offset().top }, 1000)
-    })
+document.querySelector('#scrollLink').addEventListener('click', function(e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+    });
 });
+window.onscroll = function() { scrollFunction() };
+
+function scrollFunction() {
+    if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+        document.getElementById("scrolltotop").style.display = "block";
+    } else {
+        document.getElementById("scrolltotop").style.display = "none";
+    }
+}

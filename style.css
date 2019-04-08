@@ -574,3 +574,28 @@ box3 {
     position: absolute;
     bottom: 0;
 }
+
+#scrolltotop {
+    padding: 0;
+    display: none;
+    background: white;
+    transition: all 1s ease;
+}
+
+#scrolltotop i {
+    font-size: 50px;
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    background-color: #c7c6c6;
+    color: #323232;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    transition: all 1s ease;
+    z-index: 150 !important;
+}
+
+#scrolltotop i:hover {
+    background-color: #9E9E9E;
+}
