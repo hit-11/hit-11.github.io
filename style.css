@@ -603,3 +603,65 @@ box3 {
 #scrolltotop i:hover {
     color: #093bdd;
 }
+@media only screen and (min-width:743px) and (max-width:1169px){
+    .about h1{
+        font-size:65px;
+        font-weight: 600;
+        line-height: 100px;
+    }
+    .hello{
+        font-size: 28px;
+        margin-left: 7%;
+    }
+     .text {
+        margin-left: 15%;
+    }
+}
+@media only screen and (min-width:600px) and (max-width:743px){
+    .about h1{
+        font-size:56px;
+        font-weight: 600;
+        line-height: 100px;
+    }
+    .hello{
+        font-size: 28px;
+        margin-left: 4%;
+    }
+     .text {
+        margin-left: 10%;
+    }
+}
+@media only screen and (min-width:320px) and (max-width:600px){
+    .about h1{
+        font-size:48px;
+        font-weight: 600;
+        line-height: 80px;
+    }
+    .hello{
+        font-size: 20px;
+        margin-left: 7%;
+    }
+    .text {
+        margin-left: 15%;
+    }
+    .words{
+        display:block;
+    }
+}
+@media only screen and (max-width:345px){
+    .about h1{
+        font-size:45px;
+        font-weight: 600;
+        line-height: 80px;
+    }
+    .hello{
+        font-size: 15px;
+        margin-left: 5%;
+    }
+    .text {
+        margin-left: 10%;
+    }
+    .words{
+        display:block;
+    }
+}
