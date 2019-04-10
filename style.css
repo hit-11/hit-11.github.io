@@ -20,8 +20,8 @@ body {
 
 #hamburger {
     position: fixed;
-    height: 2.3%;
-    width: 2.3%;
+    height: 40px;
+    width: 38px;
     top: 5%;
     right: 4%;
     cursor: pointer;
@@ -103,6 +103,7 @@ body {
     background-color: #607cd7;
     overflow-x: hidden;
     transition: 0.5s;
+    z-index: 2 !important;
 }
 
 .overlay-content {
@@ -596,72 +597,100 @@ box3 {
     width: 50px;
     height: 50px;
     transition: all 1s ease;
-    z-index: 150 !important;
+    z-index: 1 !important;
     opacity: 0.8;
 }
 
 #scrolltotop i:hover {
     color: #093bdd;
 }
-@media only screen and (min-width:743px) and (max-width:1169px){
-    .about h1{
-        font-size:65px;
+
+@media only screen and (min-width:743px) and (max-width:1169px) {
+    .about h1 {
+        font-size: 65px;
         font-weight: 600;
         line-height: 100px;
     }
-    .hello{
+    .hello {
         font-size: 28px;
         margin-left: 7%;
     }
-     .text {
+    .text {
         margin-left: 15%;
     }
+    .overlay a {
+        font-size: 30px;
+    }
 }
-@media only screen and (min-width:600px) and (max-width:743px){
-    .about h1{
-        font-size:56px;
+
+@media only screen and (min-width:600px) and (max-width:743px) {
+    .about h1 {
+        font-size: 56px;
         font-weight: 600;
         line-height: 100px;
     }
-    .hello{
+    .hello {
         font-size: 28px;
         margin-left: 4%;
     }
-     .text {
+    .text {
         margin-left: 10%;
     }
+    .overlay a {
+        font-size: 25px;
+    }
+    #hamburger {
+        width: 35px;
+    }
 }
-@media only screen and (min-width:320px) and (max-width:600px){
-    .about h1{
-        font-size:48px;
+
+@media only screen and (min-width:320px) and (max-width:600px) {
+    .about h1 {
+        font-size: 48px;
         font-weight: 600;
         line-height: 80px;
     }
-    .hello{
+    .hello {
         font-size: 20px;
         margin-left: 7%;
     }
     .text {
         margin-left: 15%;
     }
-    .words{
-        display:block;
+    .words {
+        display: block;
+    }
+    .overlay a {
+        font-size: 25px;
+    }
+    #hamburger {
+        width: 30px;
+        height: 30px;
     }
 }
-@media only screen and (max-width:345px){
-    .about h1{
-        font-size:45px;
+
+@media only screen and (max-width:345px) {
+    .about h1 {
+        font-size: 45px;
         font-weight: 600;
         line-height: 80px;
     }
-    .hello{
+    .hello {
         font-size: 15px;
         margin-left: 5%;
     }
     .text {
         margin-left: 10%;
     }
-    .words{
-        display:block;
+    .words {
+        display: block;
+    }
+    .overlay a {
+        font-size: 20px;
+        width: 100%;
+    }
+    #hamburger {
+        width: 20px;
+        height: 20px;
     }
 }
