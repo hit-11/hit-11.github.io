@@ -287,6 +287,12 @@ body {
 
 /* General Styling */
 
+.skills,
+.projects,
+.contacts {
+    margin-bottom: 10%;
+}
+
 .about,
 .skills,
 .projects,
@@ -372,14 +378,6 @@ body {
 #skill ul li {
     margin-bottom: 3%;
 }
-
-
-/* .skills .card {
-    margin-left: 5%;
-    height: 400px;
-    background-color: #506FD4;
-    width: 35%;
-} */
 
 #skill a {
     color: #323232;
@@ -525,6 +523,32 @@ body {
     text-transform: uppercase;
 }
 
+.more a {
+    position: relative;
+    text-decoration: none;
+}
+
+.more a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #1d4ce7;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.more a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
 #contact {
     position: relative;
     padding: 0;
@@ -604,11 +628,22 @@ body {
     color: #093bdd;
 }
 
-@media only screen and (min-width:992px) {
+@media only screen and (min-width:993px) {
     .skills,
     .projects,
     .contacts {
         height: 100vh;
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (min-width:993px) and (max-width:1140px) {
+    .card-title {
+        font-size: 23px !important;
+    }
+    .card-content,
+    .card-action {
+        font-size: 15px;
     }
 }
 
@@ -719,6 +754,20 @@ body {
     #skill ul {
         margin-top: 0;
     }
+    .card-title {
+        font-size: 20px !important;
+    }
+    .card-content,
+    .card-action {
+        font-size: 15px;
+    }
+    .more h5 {
+        font-size: 20px;
+    }
+    .card {
+        margin-bottom: 0;
+        margin-top: 4%;
+    }
 }
 
 @media only screen and (max-width:345px) {
@@ -763,5 +812,8 @@ body {
     }
     #skill ul {
         margin-top: 0;
+    }
+    .more h5 {
+        font-size: 18px;
     }
 }
