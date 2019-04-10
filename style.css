@@ -288,9 +288,12 @@ body {
 /* General Styling */
 
 .skills,
-.projects,
-.contacts {
+.projects {
     margin-bottom: 10%;
+}
+
+.contacts {
+    padding-bottom: 20% !important;
 }
 
 .about,
@@ -628,12 +631,17 @@ body {
     color: #093bdd;
 }
 
+
+/*Responsiveness*/
+
 @media only screen and (min-width:993px) {
     .skills,
-    .projects,
-    .contacts {
+    .projects {
         height: 100vh;
         margin-bottom: 0;
+    }
+    .contacts {
+        padding-bottom: 0;
     }
 }
 
@@ -768,6 +776,9 @@ body {
         margin-bottom: 0;
         margin-top: 4%;
     }
+    #contact .icons i {
+        font-size: 40px;
+    }
 }
 
 @media only screen and (max-width:345px) {
@@ -815,5 +826,8 @@ body {
     }
     .more h5 {
         font-size: 18px;
+    }
+    #contact .icons i {
+        font-size: 35px;
     }
 }
