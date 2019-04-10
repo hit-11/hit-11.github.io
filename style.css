@@ -293,6 +293,9 @@ body {
 .contacts {
     font-family: 'PT Serif Caption', serif;
     color: #323232;
+}
+
+.about {
     height: 100vh;
 }
 
@@ -471,10 +474,6 @@ body {
     background: #91da3b;
 }
 
-box3 {
-    background: #91da3b;
-}
-
 .card {
     background: #506FD4 !important;
     color: white !important;
@@ -605,6 +604,14 @@ box3 {
     color: #093bdd;
 }
 
+@media only screen and (min-width:992px) {
+    .skills,
+    .projects,
+    .contacts {
+        height: 100vh;
+    }
+}
+
 @media only screen and (min-width:743px) and (max-width:1169px) {
     .about h1 {
         font-size: 65px;
@@ -620,6 +627,19 @@ box3 {
     }
     .overlay a {
         font-size: 30px;
+    }
+    #skill h1,
+    #project h1,
+    #contact h1 {
+        font-size: 58px;
+        font-weight: 600;
+    }
+    #skill h3 {
+        font-size: 35px;
+        ;
+    }
+    #skill li {
+        font-size: 20px;
     }
 }
 
@@ -641,6 +661,19 @@ box3 {
     }
     #hamburger {
         width: 35px;
+    }
+    #skill h1,
+    #project h1,
+    #contact h1 {
+        font-size: 50px;
+        font-weight: 600;
+    }
+    #skill h3 {
+        font-size: 30px;
+        ;
+    }
+    #skill li {
+        font-size: 20px;
     }
 }
 
@@ -667,6 +700,25 @@ box3 {
         width: 30px;
         height: 30px;
     }
+    #skill h1,
+    #project h1,
+    #contact h1 {
+        font-size: 36px;
+        font-weight: 600;
+    }
+    #skill h3 {
+        font-size: 28px;
+        margin-bottom: 2%;
+        text-align: center;
+    }
+    #skill ul li {
+        font-size: 20px;
+        margin-bottom: 0;
+        text-align: center;
+    }
+    #skill ul {
+        margin-top: 0;
+    }
 }
 
 @media only screen and (max-width:345px) {
@@ -692,5 +744,24 @@ box3 {
     #hamburger {
         width: 20px;
         height: 20px;
+    }
+    #skill h1,
+    #project h1,
+    #contact h1 {
+        font-size: 36px;
+        font-weight: 600;
+    }
+    #skill h3 {
+        font-size: 28px;
+        margin-bottom: 2%;
+        text-align: center;
+    }
+    #skill ul li {
+        font-size: 20px;
+        margin-bottom: 0;
+        text-align: center;
+    }
+    #skill ul {
+        margin-top: 0;
     }
 }

@@ -82,3 +82,9 @@ function scrollFunction() {
     }
 }
 $(document).on("contextmenu", function(event) { event.preventDefault(); });
+
+$(document).ready(function() {
+    if (screen.width <= 669) {
+        document.getElementById("other").classList.remove('offset-m2');
+    }
+});
