@@ -1,2 +1,3 @@
 # hit-11.github.io
-Portfolio
+
+This is my resume website . It comprises my skills , projects and other information.
