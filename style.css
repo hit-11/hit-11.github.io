@@ -564,10 +564,11 @@ body {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     -webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;
+    transition:all .3s ease-in-out;
 }
 
 .profilePic:hover {
+    transition: all 0.3s ease;
     -webkit-filter: grayscale(50%);
     filter: grayscale(0);
 }
@@ -593,11 +594,11 @@ body {
 #contact .icons i {
     padding-top: 0;
     font-size: 50px;
-    transition: transform .3s;
-    transition: color 0.2s linear;
+    transition: all 0.3s ease;
 }
 
-#contact .icons a:hover i {
+#contact .icons a:hover i {   
+    transition: all 0.3s ease;
     transform: scale(1.5);
 }
 
